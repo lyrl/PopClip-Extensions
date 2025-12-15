@@ -30,9 +30,12 @@ export const action: Action<Options> = {
   async code(input, options) {
     try {
       await createMemo(input.text, options);
+      // 成功提醒
+      popclip.showText("✅ 已保存到Memos", { preview: false });
       popclip.showSuccess();
     } catch (error) {
-      popclip.showText(`Error: ${error.message}`, {preview: false});
+      // 失败提醒
+      popclip.showText(`❌ 保存失败: ${error.message}`, { preview: false });
     }
   },
 };
