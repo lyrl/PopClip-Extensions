@@ -3,7 +3,7 @@
 // identifier: com.lyrl.popclip.extension.memos
 // description: Save selected text as a memo to your Memos service.
 // popclip version: 4688
-// icon: memo-icon.png
+// icon: 📝
 // entitlements: [network]
 
 import axios from "axios";
